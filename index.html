@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteWise Documentation</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Include Showdown.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-circle">
+                <span class="logo-text">Note</span><span class="logo-text-bold">Wise</span>
+            </div>
+            <p class="slogan">On making a <span class="highlight">{perfect personal librarian}</span></p>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Applications</h2>
+            <ul id="fileList">
+                <!-- Dynamically populated list of .md files -->
+            </ul>
+        </aside>
+
+        <div class="content">
+            <h2>Documentation</h2>
+            <div id="fileContent">Click a file to view its content.</div>
+
+            <!-- Navigation buttons for Previous and Next -->
+            <div id="navigation-buttons" style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <button id="prevBtn" disabled>Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
